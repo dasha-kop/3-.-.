@@ -1,0 +1,53 @@
+\hypertarget{classpatterns_kursach_1_1_login}{}\section{patterns\+Kursach.\+Login Class Reference}
+\label{classpatterns_kursach_1_1_login}\index{patterns\+Kursach.\+Login@{patterns\+Kursach.\+Login}}
+
+
+Inheritance diagram for patterns\+Kursach.\+Login\+:
+% FIG 0
+
+
+Collaboration diagram for patterns\+Kursach.\+Login\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpatterns_kursach_1_1_login_a634b6674a8c0c0ceace74f06683b1e2a}{Login}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classpatterns_kursach_1_1_login_ad03dba5cc72d1a588166064d049911db}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Освободить все используемые ресурсы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1_login_a634b6674a8c0c0ceace74f06683b1e2a}\label{classpatterns_kursach_1_1_login_a634b6674a8c0c0ceace74f06683b1e2a}} 
+\index{patterns\+Kursach\+::\+Login@{patterns\+Kursach\+::\+Login}!Login@{Login}}
+\index{Login@{Login}!patterns\+Kursach\+::\+Login@{patterns\+Kursach\+::\+Login}}
+\subsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily patterns\+Kursach.\+Login.\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1_login_ad03dba5cc72d1a588166064d049911db}\label{classpatterns_kursach_1_1_login_ad03dba5cc72d1a588166064d049911db}} 
+\index{patterns\+Kursach\+::\+Login@{patterns\+Kursach\+::\+Login}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!patterns\+Kursach\+::\+Login@{patterns\+Kursach\+::\+Login}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void patterns\+Kursach.\+Login.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Освободить все используемые ресурсы. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & истинно, если управляемый ресурс должен быть удален; иначе ложно.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_login_8cs}{Login.\+cs}}\item 
+\mbox{\hyperlink{_login_8_designer_8cs}{Login.\+Designer.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,122 @@
+\hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter}{}\section{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter Interface Reference}
+\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter}\index{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter@{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}
+Inheritance diagram for patterns\+Kursach.\+adapter.\+I\+Store\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Row \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a23ec87fad2ed69f4aeb2cc98369dfcc0}{find\+Id}} (int id, String table)
+\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a13f0beab6001c24e72b16d3afa1c5f7a}{find\+All}} (String table)
+\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_aa213143da13c4772d0aa695ece08b3ac}{find\+Side\+Kick}} (String table, String v\+Key, int id)
+\item 
+void \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a68e63038dd5b807330386f8ac774896a}{edit}} (String table, Dictionary$<$ String, Object $>$ colums, int id)
+\item 
+void \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a12816166876b9ddffa991a55d5e917c8}{add}} (String table, List$<$ Object $>$ colums)
+\item 
+void \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a938d47744137644c9da0e8d745823238}{delete}} (String table, int id)
+\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a2f461380a248778258d993f8dc1eb265}{sql\+Execute}} (String sql)
+\item 
+void \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_ad1833d2efd297547ff34828468e914d2}{Add\+Update\+Execute}} (String sql)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file I\+Store\+Adapter.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a12816166876b9ddffa991a55d5e917c8}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a12816166876b9ddffa991a55d5e917c8}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!add@{add}}
+\index{add@{add}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+add (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{List$<$ Object $>$}]{colums }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a1a6b043621bfa53482563397597aa046}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_ad1833d2efd297547ff34828468e914d2}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_ad1833d2efd297547ff34828468e914d2}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!Add\+Update\+Execute@{Add\+Update\+Execute}}
+\index{Add\+Update\+Execute@{Add\+Update\+Execute}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{Add\+Update\+Execute()}{AddUpdateExecute()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+Add\+Update\+Execute (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a45d79830f42e8ba2341425175559b31b}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a938d47744137644c9da0e8d745823238}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a938d47744137644c9da0e8d745823238}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!delete@{delete}}
+\index{delete@{delete}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+delete (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6c87c580a8bdc3e2803ae31e59ad0071}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a68e63038dd5b807330386f8ac774896a}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a68e63038dd5b807330386f8ac774896a}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!edit@{edit}}
+\index{edit@{edit}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+edit (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{Dictionary$<$ String, Object $>$}]{colums,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_abb78e8f3b4afc32f724141fd36cf3bfb}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a13f0beab6001c24e72b16d3afa1c5f7a}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a13f0beab6001c24e72b16d3afa1c5f7a}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!find\+All@{find\+All}}
+\index{find\+All@{find\+All}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{find\+All()}{findAll()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+find\+All (\begin{DoxyParamCaption}\item[{String}]{table }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a08e1b401021fac85dfd2f22a8654171a}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a23ec87fad2ed69f4aeb2cc98369dfcc0}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a23ec87fad2ed69f4aeb2cc98369dfcc0}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!find\+Id@{find\+Id}}
+\index{find\+Id@{find\+Id}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{find\+Id()}{findId()}}
+{\footnotesize\ttfamily Data\+Row patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+find\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{String}]{table }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6b1e7c2a228f04ef4708702a8e11f114}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_aa213143da13c4772d0aa695ece08b3ac}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_aa213143da13c4772d0aa695ece08b3ac}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!find\+Side\+Kick@{find\+Side\+Kick}}
+\index{find\+Side\+Kick@{find\+Side\+Kick}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{find\+Side\+Kick()}{findSideKick()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+find\+Side\+Kick (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{String}]{v\+Key,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a25fff62c20799364eebdb38515169fb1}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+\mbox{\Hypertarget{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a2f461380a248778258d993f8dc1eb265}\label{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a2f461380a248778258d993f8dc1eb265}} 
+\index{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}!sql\+Execute@{sql\+Execute}}
+\index{sql\+Execute@{sql\+Execute}!patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter@{patterns\+Kursach\+::adapter\+::\+I\+Store\+Adapter}}
+\subsubsection{\texorpdfstring{sql\+Execute()}{sqlExecute()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+adapter.\+I\+Store\+Adapter.\+sql\+Execute (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6ad39a4e1cc12887ba0f3f8563032c6d}{patterns\+Kursach.\+Storage\+Adapter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+patterns\+Kursach/\mbox{\hyperlink{_i_store_adapter_8cs}{I\+Store\+Adapter.\+cs}}\end{DoxyCompactItemize}

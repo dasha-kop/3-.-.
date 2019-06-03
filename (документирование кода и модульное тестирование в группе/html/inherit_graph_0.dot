@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Form",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="patternsKursach.Login",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpatterns_kursach_1_1_login.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="patternsKursach.student",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpatterns_kursach_1_1student.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="patternsKursach.TeacherView",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpatterns_kursach_1_1_teacher_view.html"];
+}

@@ -1,0 +1,127 @@
+\hypertarget{classpatterns_kursach_1_1_db_connection}{}\section{patterns\+Kursach.\+Db\+Connection Class Reference}
+\label{classpatterns_kursach_1_1_db_connection}\index{patterns\+Kursach.\+Db\+Connection@{patterns\+Kursach.\+Db\+Connection}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static My\+Sql\+Connection \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a30c5f9ea35c8c1ab85ba540431203590}{get\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Получение подключения к БД \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a3d3e6dbf6c6e37527a5a6885fc9f2a3a}{server\+Name}} = \char`\"{}localhost\char`\"{}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a7d457ab2278b176330c807719ab43b17}{user\+Name}} = \char`\"{}root\char`\"{}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a004b474e138bf030a0b26677203aa28a}{db\+Name}} = \char`\"{}pattern\char`\"{}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a320a0f64312ebe973e6bedbd4643ae40}{port}} = \char`\"{}3306\char`\"{}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_af01a81bc636c18072192a923e1f7d4d6}{password}} = \char`\"{}\char`\"{}
+\item 
+const String \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a99322d824eba94a085cf10f971480b9a}{conn\+Str}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Db\+Connection.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a30c5f9ea35c8c1ab85ba540431203590}\label{classpatterns_kursach_1_1_db_connection_a30c5f9ea35c8c1ab85ba540431203590}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!get\+Connection@{get\+Connection}}
+\index{get\+Connection@{get\+Connection}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{get\+Connection()}{getConnection()}}
+{\footnotesize\ttfamily static My\+Sql\+Connection patterns\+Kursach.\+Db\+Connection.\+get\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение подключения к БД 
+
+\begin{DoxyReturn}{Returns}
+подключение
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Db\+Connection.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a99322d824eba94a085cf10f971480b9a}\label{classpatterns_kursach_1_1_db_connection_a99322d824eba94a085cf10f971480b9a}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!conn\+Str@{conn\+Str}}
+\index{conn\+Str@{conn\+Str}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{conn\+Str}{connStr}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+conn\+Str}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= 
+            \textcolor{stringliteral}{"server="} 
+            + \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a3d3e6dbf6c6e37527a5a6885fc9f2a3a}{serverName}} +
+            \textcolor{stringliteral}{";user="} + \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a7d457ab2278b176330c807719ab43b17}{userName}} +
+            \textcolor{stringliteral}{";database="} + \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a004b474e138bf030a0b26677203aa28a}{dbName}} +
+            \textcolor{stringliteral}{";port="} + \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_a320a0f64312ebe973e6bedbd4643ae40}{port}} +
+            \textcolor{stringliteral}{";password="} + \mbox{\hyperlink{classpatterns_kursach_1_1_db_connection_af01a81bc636c18072192a923e1f7d4d6}{password}} + \textcolor{stringliteral}{";"}
+\end{DoxyCode}
+
+
+Definition at line 17 of file Db\+Connection.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a004b474e138bf030a0b26677203aa28a}\label{classpatterns_kursach_1_1_db_connection_a004b474e138bf030a0b26677203aa28a}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!db\+Name@{db\+Name}}
+\index{db\+Name@{db\+Name}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{db\+Name}{dbName}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+db\+Name = \char`\"{}pattern\char`\"{}}
+
+
+
+Definition at line 14 of file Db\+Connection.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_af01a81bc636c18072192a923e1f7d4d6}\label{classpatterns_kursach_1_1_db_connection_af01a81bc636c18072192a923e1f7d4d6}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!password@{password}}
+\index{password@{password}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+password = \char`\"{}\char`\"{}}
+
+
+
+Definition at line 16 of file Db\+Connection.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a320a0f64312ebe973e6bedbd4643ae40}\label{classpatterns_kursach_1_1_db_connection_a320a0f64312ebe973e6bedbd4643ae40}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!port@{port}}
+\index{port@{port}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+port = \char`\"{}3306\char`\"{}}
+
+
+
+Definition at line 15 of file Db\+Connection.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a3d3e6dbf6c6e37527a5a6885fc9f2a3a}\label{classpatterns_kursach_1_1_db_connection_a3d3e6dbf6c6e37527a5a6885fc9f2a3a}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!server\+Name@{server\+Name}}
+\index{server\+Name@{server\+Name}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{server\+Name}{serverName}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+server\+Name = \char`\"{}localhost\char`\"{}}
+
+
+
+Definition at line 12 of file Db\+Connection.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_db_connection_a7d457ab2278b176330c807719ab43b17}\label{classpatterns_kursach_1_1_db_connection_a7d457ab2278b176330c807719ab43b17}} 
+\index{patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}!user\+Name@{user\+Name}}
+\index{user\+Name@{user\+Name}!patterns\+Kursach\+::\+Db\+Connection@{patterns\+Kursach\+::\+Db\+Connection}}
+\subsubsection{\texorpdfstring{user\+Name}{userName}}
+{\footnotesize\ttfamily const String patterns\+Kursach.\+Db\+Connection.\+user\+Name = \char`\"{}root\char`\"{}}
+
+
+
+Definition at line 13 of file Db\+Connection.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+patterns\+Kursach/\mbox{\hyperlink{_db_connection_8cs}{Db\+Connection.\+cs}}\end{DoxyCompactItemize}

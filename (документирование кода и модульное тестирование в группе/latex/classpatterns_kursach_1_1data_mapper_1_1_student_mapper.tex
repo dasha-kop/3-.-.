@@ -1,0 +1,439 @@
+\hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper}{}\section{patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper Class Reference}
+\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper}\index{patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper@{patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_abe2ee2a1d99ec8a670b06e14bf485978}{Student\+Mapper}} (\mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter}{Storage\+Adapter}} adapter)
+\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adc1a026a6c10fa11740bd6f9a39231b0}{add\+Student}} (List$<$ Object $>$ column)
+\begin{DoxyCompactList}\small\item\em Добавление студента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab37f2fdaef6951f4fe350d79f1ae3149}{edit\+Student}} (Dictionary$<$ String, Object $>$ columns, int id)
+\begin{DoxyCompactList}\small\item\em Редактирование студента \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpatterns_kursach_1_1_student}{Student}} \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a0cfc1d01eebb1fabbe72aeccec55ade6}{find\+Student\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск студента по id \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classpatterns_kursach_1_1_student}{Student}} $>$ \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a19faeafa6a8b94bdd7272d47b0f4168b}{find\+All}} ()
+\begin{DoxyCompactList}\small\item\em Вывод всех студентов \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpatterns_kursach_1_1_work}{Work}} \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ade29783b17cd615f565ccf2869eff1a4}{find\+By\+Work\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск работы по id \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classpatterns_kursach_1_1_work}{Work}} $>$ \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab57ac4e8d4c89e55cc07d3200a8cb306}{find\+All\+Work\+Student}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск работ по id студента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad5ade2f61c321ca510cc9c2b8d008ed4}{add\+Work}} (List$<$ Object $>$ column)
+\begin{DoxyCompactList}\small\item\em Добавление работы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab960f10607151d2e1977da75acfcf623}{edit\+Work}} (Dictionary$<$ String, Object $>$ columns, int id)
+\begin{DoxyCompactList}\small\item\em Редактирование работы \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classpatterns_kursach_1_1_attestation}{Attestation}} $>$ \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a631ede448eb4b973717ced3ed46a1d76}{find\+All\+Attestation}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск аттестации по id студента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adabac96ea56737cf64dbc4262dd83f28}{add\+Attestation}} (List$<$ Object $>$ column)
+\begin{DoxyCompactList}\small\item\em Добавление аттестации \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa0c568803d00abb2b828eb9a607559f0}{edit\+Attestation}} (Dictionary$<$ String, Object $>$ columns, int id)
+\begin{DoxyCompactList}\small\item\em Редактирование атестации \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classpatterns_kursach_1_1_progress}{Progress}} $>$ \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_af34ea0889dac84d4d6d4734e75f5afde}{find\+All\+Progres}} (int id)
+\begin{DoxyCompactList}\small\item\em Поиск достижение по id студента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_afc4296ea69198048d65524e961405257}{add\+Progress}} (List$<$ Object $>$ column)
+\begin{DoxyCompactList}\small\item\em Добавление достижений \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa56f41da7703e461b7036af897af0e08}{edit\+Progress}} (Dictionary$<$ String, Object $>$ columns, int id)
+\begin{DoxyCompactList}\small\item\em Редактирование достижений \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a6cd695afde7db19cd289b3fdd44a52da}{delete}} (String table, int id)
+\begin{DoxyCompactList}\small\item\em Удаление записи \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad678c8b864d3da39d5890e1cc45df311}{studet\+Table}} = \char`\"{}student\char`\"{}
+\item 
+static string \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a3573887067377c52a2968aacef8c5b40}{work\+Table}} = \char`\"{}work\char`\"{}
+\item 
+static string \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ae49cbe5b9a16a1e9b0850e3b2a15ec06}{stud\+Id}} = \char`\"{}stud\+\_\+id\char`\"{}
+\item 
+static string \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adb1a94d8efc531676eb084769e7b0025}{attest\+Table}} = \char`\"{}attestation\char`\"{}
+\item 
+static string \mbox{\hyperlink{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a096afdad2ca923edf64c677e8b45c190}{progress\+Table}} = \char`\"{}dostizh\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Student\+Mapper.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_abe2ee2a1d99ec8a670b06e14bf485978}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_abe2ee2a1d99ec8a670b06e14bf485978}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!Student\+Mapper@{Student\+Mapper}}
+\index{Student\+Mapper@{Student\+Mapper}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{Student\+Mapper()}{StudentMapper()}}
+{\footnotesize\ttfamily patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+Student\+Mapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter}{Storage\+Adapter}}}]{adapter }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file Student\+Mapper.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adabac96ea56737cf64dbc4262dd83f28}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adabac96ea56737cf64dbc4262dd83f28}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!add\+Attestation@{add\+Attestation}}
+\index{add\+Attestation@{add\+Attestation}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{add\+Attestation()}{addAttestation()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+add\+Attestation (\begin{DoxyParamCaption}\item[{List$<$ Object $>$}]{column }\end{DoxyParamCaption})}
+
+
+
+Добавление аттестации 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & поля\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_afc4296ea69198048d65524e961405257}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_afc4296ea69198048d65524e961405257}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!add\+Progress@{add\+Progress}}
+\index{add\+Progress@{add\+Progress}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{add\+Progress()}{addProgress()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+add\+Progress (\begin{DoxyParamCaption}\item[{List$<$ Object $>$}]{column }\end{DoxyParamCaption})}
+
+
+
+Добавление достижений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & поля\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 159 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adc1a026a6c10fa11740bd6f9a39231b0}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adc1a026a6c10fa11740bd6f9a39231b0}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!add\+Student@{add\+Student}}
+\index{add\+Student@{add\+Student}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{add\+Student()}{addStudent()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+add\+Student (\begin{DoxyParamCaption}\item[{List$<$ Object $>$}]{column }\end{DoxyParamCaption})}
+
+
+
+Добавление студента 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & Колонки\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad5ade2f61c321ca510cc9c2b8d008ed4}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad5ade2f61c321ca510cc9c2b8d008ed4}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!add\+Work@{add\+Work}}
+\index{add\+Work@{add\+Work}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{add\+Work()}{addWork()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+add\+Work (\begin{DoxyParamCaption}\item[{List$<$ Object $>$}]{column }\end{DoxyParamCaption})}
+
+
+
+Добавление работы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em column} & Поля\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a6cd695afde7db19cd289b3fdd44a52da}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a6cd695afde7db19cd289b3fdd44a52da}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!delete@{delete}}
+\index{delete@{delete}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+delete (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаление записи 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & таблица\\
+\hline
+{\em id} & id записи\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 177 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa0c568803d00abb2b828eb9a607559f0}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa0c568803d00abb2b828eb9a607559f0}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!edit\+Attestation@{edit\+Attestation}}
+\index{edit\+Attestation@{edit\+Attestation}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{edit\+Attestation()}{editAttestation()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+edit\+Attestation (\begin{DoxyParamCaption}\item[{Dictionary$<$ String, Object $>$}]{columns,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Редактирование атестации 
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & Поля\\
+\hline
+{\em id} & id аттестации\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa56f41da7703e461b7036af897af0e08}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_aa56f41da7703e461b7036af897af0e08}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!edit\+Progress@{edit\+Progress}}
+\index{edit\+Progress@{edit\+Progress}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{edit\+Progress()}{editProgress()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+edit\+Progress (\begin{DoxyParamCaption}\item[{Dictionary$<$ String, Object $>$}]{columns,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Редактирование достижений 
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & поля\\
+\hline
+{\em id} & id достижения\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 168 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab37f2fdaef6951f4fe350d79f1ae3149}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab37f2fdaef6951f4fe350d79f1ae3149}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!edit\+Student@{edit\+Student}}
+\index{edit\+Student@{edit\+Student}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{edit\+Student()}{editStudent()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+edit\+Student (\begin{DoxyParamCaption}\item[{Dictionary$<$ String, Object $>$}]{columns,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Редактирование студента 
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & Колонки\\
+\hline
+{\em id} & id записи\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab960f10607151d2e1977da75acfcf623}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab960f10607151d2e1977da75acfcf623}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!edit\+Work@{edit\+Work}}
+\index{edit\+Work@{edit\+Work}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{edit\+Work()}{editWork()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+edit\+Work (\begin{DoxyParamCaption}\item[{Dictionary$<$ String, Object $>$}]{columns,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Редактирование работы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em columns} & Поля\\
+\hline
+{\em id} & id работы\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 102 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a19faeafa6a8b94bdd7272d47b0f4168b}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a19faeafa6a8b94bdd7272d47b0f4168b}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+All@{find\+All}}
+\index{find\+All@{find\+All}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+All()}{findAll()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classpatterns_kursach_1_1_student}{Student}}$>$ patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Вывод всех студентов 
+
+\begin{DoxyReturn}{Returns}
+Список студентов
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a631ede448eb4b973717ced3ed46a1d76}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a631ede448eb4b973717ced3ed46a1d76}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+All\+Attestation@{find\+All\+Attestation}}
+\index{find\+All\+Attestation@{find\+All\+Attestation}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+All\+Attestation()}{findAllAttestation()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classpatterns_kursach_1_1_attestation}{Attestation}}$>$ patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+All\+Attestation (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Поиск аттестации по id студента 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id студента\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Аттестация
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_af34ea0889dac84d4d6d4734e75f5afde}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_af34ea0889dac84d4d6d4734e75f5afde}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+All\+Progres@{find\+All\+Progres}}
+\index{find\+All\+Progres@{find\+All\+Progres}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+All\+Progres()}{findAllProgres()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classpatterns_kursach_1_1_progress}{Progress}}$>$ patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+All\+Progres (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Поиск достижение по id студента 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id студента\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Достижения
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab57ac4e8d4c89e55cc07d3200a8cb306}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ab57ac4e8d4c89e55cc07d3200a8cb306}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+All\+Work\+Student@{find\+All\+Work\+Student}}
+\index{find\+All\+Work\+Student@{find\+All\+Work\+Student}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+All\+Work\+Student()}{findAllWorkStudent()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classpatterns_kursach_1_1_work}{Work}}$>$ patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+All\+Work\+Student (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Поиск работ по id студента 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id студента\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Работы студента
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ade29783b17cd615f565ccf2869eff1a4}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ade29783b17cd615f565ccf2869eff1a4}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+By\+Work\+Id@{find\+By\+Work\+Id}}
+\index{find\+By\+Work\+Id@{find\+By\+Work\+Id}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+By\+Work\+Id()}{findByWorkId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpatterns_kursach_1_1_work}{Work}} patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+By\+Work\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Поиск работы по id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Работа
+\end{DoxyReturn}
+
+
+Definition at line 68 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a0cfc1d01eebb1fabbe72aeccec55ade6}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a0cfc1d01eebb1fabbe72aeccec55ade6}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!find\+Student\+By\+Id@{find\+Student\+By\+Id}}
+\index{find\+Student\+By\+Id@{find\+Student\+By\+Id}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{find\+Student\+By\+Id()}{findStudentById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpatterns_kursach_1_1_student}{Student}} patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+find\+Student\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Поиск студента по id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id студента\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Студент
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Student\+Mapper.\+cs.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adb1a94d8efc531676eb084769e7b0025}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_adb1a94d8efc531676eb084769e7b0025}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!attest\+Table@{attest\+Table}}
+\index{attest\+Table@{attest\+Table}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{attest\+Table}{attestTable}}
+{\footnotesize\ttfamily string patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+attest\+Table = \char`\"{}attestation\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 15 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a096afdad2ca923edf64c677e8b45c190}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a096afdad2ca923edf64c677e8b45c190}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!progress\+Table@{progress\+Table}}
+\index{progress\+Table@{progress\+Table}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{progress\+Table}{progressTable}}
+{\footnotesize\ttfamily string patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+progress\+Table = \char`\"{}dostizh\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 16 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad678c8b864d3da39d5890e1cc45df311}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ad678c8b864d3da39d5890e1cc45df311}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!studet\+Table@{studet\+Table}}
+\index{studet\+Table@{studet\+Table}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{studet\+Table}{studetTable}}
+{\footnotesize\ttfamily string patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+studet\+Table = \char`\"{}student\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 12 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ae49cbe5b9a16a1e9b0850e3b2a15ec06}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_ae49cbe5b9a16a1e9b0850e3b2a15ec06}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!stud\+Id@{stud\+Id}}
+\index{stud\+Id@{stud\+Id}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{stud\+Id}{studId}}
+{\footnotesize\ttfamily string patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+stud\+Id = \char`\"{}stud\+\_\+id\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 14 of file Student\+Mapper.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a3573887067377c52a2968aacef8c5b40}\label{classpatterns_kursach_1_1data_mapper_1_1_student_mapper_a3573887067377c52a2968aacef8c5b40}} 
+\index{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}!work\+Table@{work\+Table}}
+\index{work\+Table@{work\+Table}!patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper@{patterns\+Kursach\+::data\+Mapper\+::\+Student\+Mapper}}
+\subsubsection{\texorpdfstring{work\+Table}{workTable}}
+{\footnotesize\ttfamily string patterns\+Kursach.\+data\+Mapper.\+Student\+Mapper.\+work\+Table = \char`\"{}work\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 13 of file Student\+Mapper.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+patterns\+Kursach/\mbox{\hyperlink{_student_mapper_8cs}{Student\+Mapper.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+\hypertarget{classpatterns_kursach_1_1_storage_adapter}{}\section{patterns\+Kursach.\+Storage\+Adapter Class Reference}
+\label{classpatterns_kursach_1_1_storage_adapter}\index{patterns\+Kursach.\+Storage\+Adapter@{patterns\+Kursach.\+Storage\+Adapter}}
+Inheritance diagram for patterns\+Kursach.\+Storage\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpatterns_kursach_1_1_storage_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Row \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6b1e7c2a228f04ef4708702a8e11f114}{find\+Id}} (int id, String table)
+\begin{DoxyCompactList}\small\item\em Поиск записи по id \end{DoxyCompactList}\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a08e1b401021fac85dfd2f22a8654171a}{find\+All}} (String table)
+\begin{DoxyCompactList}\small\item\em Вывод всех данных из таблицы \end{DoxyCompactList}\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a25fff62c20799364eebdb38515169fb1}{find\+Side\+Kick}} (String table, String v\+Key, int id)
+\begin{DoxyCompactList}\small\item\em Вывод данных из связаной таблицы \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_abb78e8f3b4afc32f724141fd36cf3bfb}{edit}} (String table, Dictionary$<$ String, Object $>$ colums, int id)
+\begin{DoxyCompactList}\small\item\em Редактирование записи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a1a6b043621bfa53482563397597aa046}{add}} (String table, List$<$ Object $>$ colums)
+\begin{DoxyCompactList}\small\item\em Добавление записи \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6c87c580a8bdc3e2803ae31e59ad0071}{delete}} (String table, int id)
+\begin{DoxyCompactList}\small\item\em Удаление зщаписи \end{DoxyCompactList}\item 
+Data\+Row \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a6ad39a4e1cc12887ba0f3f8563032c6d}{sql\+Execute}} (String sql)
+\begin{DoxyCompactList}\small\item\em Выполнение sql скрипта для вывода данных \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpatterns_kursach_1_1_storage_adapter_a45d79830f42e8ba2341425175559b31b}{Add\+Update\+Execute}} (String sql)
+\begin{DoxyCompactList}\small\item\em Выполнение sql скрипта для добавление/обновления данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Storage\+Adapter.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a1a6b043621bfa53482563397597aa046}\label{classpatterns_kursach_1_1_storage_adapter_a1a6b043621bfa53482563397597aa046}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!add@{add}}
+\index{add@{add}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+Storage\+Adapter.\+add (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{List$<$ Object $>$}]{colums }\end{DoxyParamCaption})}
+
+
+
+Добавление записи 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & название таблицы\\
+\hline
+{\em colums} & Поля\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a12816166876b9ddffa991a55d5e917c8}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 86 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a45d79830f42e8ba2341425175559b31b}\label{classpatterns_kursach_1_1_storage_adapter_a45d79830f42e8ba2341425175559b31b}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!Add\+Update\+Execute@{Add\+Update\+Execute}}
+\index{Add\+Update\+Execute@{Add\+Update\+Execute}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{Add\+Update\+Execute()}{AddUpdateExecute()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+Storage\+Adapter.\+Add\+Update\+Execute (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})}
+
+
+
+Выполнение sql скрипта для добавление/обновления данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & скрипт\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_ad1833d2efd297547ff34828468e914d2}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 139 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a6c87c580a8bdc3e2803ae31e59ad0071}\label{classpatterns_kursach_1_1_storage_adapter_a6c87c580a8bdc3e2803ae31e59ad0071}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!delete@{delete}}
+\index{delete@{delete}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+Storage\+Adapter.\+delete (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Удаление зщаписи 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Название таблицы\\
+\hline
+{\em id} & id записи\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a938d47744137644c9da0e8d745823238}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 109 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_abb78e8f3b4afc32f724141fd36cf3bfb}\label{classpatterns_kursach_1_1_storage_adapter_abb78e8f3b4afc32f724141fd36cf3bfb}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!edit@{edit}}
+\index{edit@{edit}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void patterns\+Kursach.\+Storage\+Adapter.\+edit (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{Dictionary$<$ String, Object $>$}]{colums,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Редактирование записи 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & Название таблицы\\
+\hline
+{\em colums} & Словарь название поля -\/ значение поля \\
+\hline
+{\em id} & id записи\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a68e63038dd5b807330386f8ac774896a}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 58 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a08e1b401021fac85dfd2f22a8654171a}\label{classpatterns_kursach_1_1_storage_adapter_a08e1b401021fac85dfd2f22a8654171a}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!find\+All@{find\+All}}
+\index{find\+All@{find\+All}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{find\+All()}{findAll()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+Storage\+Adapter.\+find\+All (\begin{DoxyParamCaption}\item[{String}]{table }\end{DoxyParamCaption})}
+
+
+
+Вывод всех данных из таблицы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & название таблицы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Список данных
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a13f0beab6001c24e72b16d3afa1c5f7a}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 33 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a6b1e7c2a228f04ef4708702a8e11f114}\label{classpatterns_kursach_1_1_storage_adapter_a6b1e7c2a228f04ef4708702a8e11f114}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!find\+Id@{find\+Id}}
+\index{find\+Id@{find\+Id}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{find\+Id()}{findId()}}
+{\footnotesize\ttfamily Data\+Row patterns\+Kursach.\+Storage\+Adapter.\+find\+Id (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{String}]{table }\end{DoxyParamCaption})}
+
+
+
+Поиск записи по id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & id записи\\
+\hline
+{\em table} & Название таблицы\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Запись
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a23ec87fad2ed69f4aeb2cc98369dfcc0}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 22 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a25fff62c20799364eebdb38515169fb1}\label{classpatterns_kursach_1_1_storage_adapter_a25fff62c20799364eebdb38515169fb1}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!find\+Side\+Kick@{find\+Side\+Kick}}
+\index{find\+Side\+Kick@{find\+Side\+Kick}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{find\+Side\+Kick()}{findSideKick()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+Storage\+Adapter.\+find\+Side\+Kick (\begin{DoxyParamCaption}\item[{String}]{table,  }\item[{String}]{v\+Key,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Вывод данных из связаной таблицы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & название таблицы\\
+\hline
+{\em v\+Key} & название внешнего ключа\\
+\hline
+{\em id} & id записи\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Список данных
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_aa213143da13c4772d0aa695ece08b3ac}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 46 of file Storage\+Adapter.\+cs.
+
+\mbox{\Hypertarget{classpatterns_kursach_1_1_storage_adapter_a6ad39a4e1cc12887ba0f3f8563032c6d}\label{classpatterns_kursach_1_1_storage_adapter_a6ad39a4e1cc12887ba0f3f8563032c6d}} 
+\index{patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}!sql\+Execute@{sql\+Execute}}
+\index{sql\+Execute@{sql\+Execute}!patterns\+Kursach\+::\+Storage\+Adapter@{patterns\+Kursach\+::\+Storage\+Adapter}}
+\subsubsection{\texorpdfstring{sql\+Execute()}{sqlExecute()}}
+{\footnotesize\ttfamily Data\+Row \mbox{[}$\,$\mbox{]} patterns\+Kursach.\+Storage\+Adapter.\+sql\+Execute (\begin{DoxyParamCaption}\item[{String}]{sql }\end{DoxyParamCaption})}
+
+
+
+Выполнение sql скрипта для вывода данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & sql скрипт\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacepatterns_kursach_1_1adapter_1_1_i_store_adapter_a2f461380a248778258d993f8dc1eb265}{patterns\+Kursach.\+adapter.\+I\+Store\+Adapter}}.
+
+
+
+Definition at line 120 of file Storage\+Adapter.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+patterns\+Kursach/\mbox{\hyperlink{_storage_adapter_8cs}{Storage\+Adapter.\+cs}}\end{DoxyCompactItemize}
